@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> SVG Circle</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <div class='graph'>
+        <svg height="210" width="500">
+            <line x1="0" y1="0" x2="250" y2="0" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="0" y1="40" x2="250" y2="40" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="0" y1="80" x2="250" y2="80" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="0" y1="120" x2="250" y2="120" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="0" y1="160" x2="250" y2="160" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="40" y1="0" x2="40" y2="250" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="80" y1="0" x2="80" y2="250" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="120" y1="0" x2="120" y2="250" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="160" y1="0" x2="160" y2="250" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="200" y1="0" x2="200" y2="250" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <circle id="scircle" cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="#ddd" />
+        </svg>
+        <div class='inputs'>
+            <input type='range' id="xrange" min='30' max='200' onclick='fnDefinePosition()'>
+            <input type='range' id="yrange" min='30' max='200' onclick='fnDefinePosition()'>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
